@@ -1,0 +1,19 @@
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+html,body{width:100%;height:100%;overflow:hidden;background:#060914;font-family:ui-monospace,Menlo,Consolas,monospace;color:#e8fff9;touch-action:none;overscroll-behavior:none}
+#c{display:block;width:100%;height:100%;touch-action:none}
+.hud{position:fixed;left:0;right:0;top:0;display:flex;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top)) calc(18px + env(safe-area-inset-right)) 0 calc(18px + env(safe-area-inset-left));pointer-events:none;z-index:5}
+.hud span{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#6fa9a0}
+.hud b{font-size:26px;font-weight:800;color:#22e6c4;text-shadow:0 0 14px rgba(34,230,196,.55);font-variant-numeric:tabular-nums}
+.hud .r{text-align:right}.hud .r b{color:#c4b5fd;text-shadow:0 0 14px rgba(167,139,250,.5)}
+.ov{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:20px;background:rgba(4,6,16,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.ov[hidden]{display:none}
+.card{width:100%;max-width:340px;padding:30px 24px 22px;text-align:center;border-radius:22px;background:linear-gradient(180deg,#0f1630,#0a0f22);border:1px solid #1f2d5a;box-shadow:0 0 50px rgba(34,230,196,.14);animation:pop .3s cubic-bezier(.2,.8,.2,1)}
+.card h1{font-size:26px;letter-spacing:.08em;color:#22e6c4;text-shadow:0 0 18px rgba(34,230,196,.5)}
+.card.bad h1{color:#ff4d7d;text-shadow:0 0 18px rgba(255,77,125,.5)}
+.card p{margin:14px 0 22px;font-size:14px;line-height:1.6;color:#a8b8d8;font-family:system-ui,-apple-system,sans-serif}
+.card button{width:100%;padding:16px;border-radius:14px;border:0;background:linear-gradient(135deg,#22e6c4,#38bdf8);color:#04141f;font:800 15px ui-monospace,Menlo,Consolas,monospace;letter-spacing:.1em;cursor:pointer;box-shadow:0 10px 30px -10px #22e6c4}
+.card button:active{transform:scale(.98)}
+.card button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.card small{display:block;margin-top:14px;font-size:11px;color:#5d6f95}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.97)}}
+@media(prefers-reduced-motion:reduce){.card{animation:none}}
