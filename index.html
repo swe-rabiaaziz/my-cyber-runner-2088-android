@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#060914">
+<title>Cyber Runner 2088</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c" aria-label="Cyber Runner game"></canvas>
+<div class="hud" aria-live="off"><div><span>Score</span><b id="scoreV">0</b></div><div class="r"><span>Best</span><b id="bestV">0</b></div></div>
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ovTitle">
+  <div class="card">
+    <h1 id="ovTitle">CYBER RUNNER</h1>
+    <p id="ovText">Tap anywhere to jump. Tap again in mid-air for a double jump. Grab energy cells for bonus points.</p>
+    <button type="button" id="ovBtn">TAP TO START</button>
+    <small>Space / ↑ also jump</small>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
